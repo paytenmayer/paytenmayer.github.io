@@ -45,10 +45,13 @@ $(function () {
     // example usage: createPlatform(x,y,width,height)
 
     createPlatform(100,620,90,15)
-    createPlatform(445,545,45,15)
-    createPlatform(100,450,75,15)
+    createPlatform(445,545,60,15)
+    createPlatform(100,450,90,15)
     createPlatform(75,0,45,650)
-    createPlatform(300,295,150,15)
+    createPlatform(300,325,5,5)
+    createPlatform(300,500,5,5)
+    createPlatform(500,325,250,999)
+    createPlatform(700,235,45,0.01)
 
     
     // TODO 2
@@ -69,7 +72,7 @@ $(function () {
     // example usage: createCannon(side, position, delay, width, height)
 
     createCannon("top", 600, 1250);
-    createCannon("top", 350, 1500);
+    createCannon("right",800, 0);
 
 
     /////////////////////////////////////////////////
