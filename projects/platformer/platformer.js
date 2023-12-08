@@ -55,6 +55,7 @@ $(function () {
     createPlatform(1150,700,3,3)
     createPlatform(1300,590,3,3)
     createPlatform(1300,450,3,3)
+    createPlatform(1300,350,3,3)
     createPlatform(1350,500,47,9)
     createPlatform(500,325,250,999)
   
@@ -66,11 +67,11 @@ $(function () {
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
 
-    createCollectable("steve", 450, 45, 20, 0.5); // creates a "steve" collectible at the coordinates (500, 300), falling with a high gravity of 20, and bouncing with 50% bounce
-    createCollectable("RedRing", 250, 25); // creates a "grace" collectible at the coordinates (500, 300), falling with default gravity and bouncing with default bounce %
-    createCollectable("RedRing", 350, 25); // creates a "grace" collectible at the coordinates (500, 300), falling with default gravity and bouncing with default bounce %
-    createCollectable("steve", 450, 25); // creates a "grace" collectible at the coordinates (500, 300), falling with default gravity and bouncing with default bounce %
-    createCollectable("Ring", 550, 25); // creates a "grace" collectible at the coordinates (500, 300), falling with default gravity and bouncing with default bounce %
+    createCollectable("rhodes", 450, 45, 1); // creates a "steve" collectible at the coordinates (500, 300), falling with a high gravity of 20, and bouncing with 50% bounce
+    createCollectable("edgeman", 125, 25); // creates a "grace" collectible at the coordinates (500, 300), falling with default gravity and bouncing with default bounce %
+    createCollectable("drails", 350, 25); // creates a "grace" collectible at the coordinates (500, 300), falling with default gravity and bouncing with default bounce %
+    createCollectable("knocks", 1125, 25); // creates a "grace" collectible at the coordinates (500, 300), falling with default gravity and bouncing with default bounce %
+    createCollectable("Ring", 800, 25); // creates a "grace" collectible at the coordinates (500, 300), falling with default gravity and bouncing with default bounce %
     
 
 
@@ -81,7 +82,7 @@ $(function () {
     // example usage: createCannon(side, position, delay, width, height)
 
     createCannon("top", 650, 1050,80,80);
-    createCannon("top", 1050, 4000,500,500);
+    createCannon("top", 1050, 4000,100,500);
     createCannon("top", 355, 1500,55,55);
     createCannon("right",800, 0,45,25);
 
