@@ -54,9 +54,9 @@ $(function () {
     createPlatform(300,700,2,2)
     createPlatform(1150,700,3,3)
     createPlatform(1300,590,3,3)
-    createPlatform(1300,450,3,3)
-    createPlatform(1300,350,3,3)
+    createPlatform(1300,400,3,3)
     createPlatform(1350,500,47,9)
+    createPlatform(1350,300,47,9)
     createPlatform(500,325,250,999)
   
 
@@ -82,8 +82,8 @@ $(function () {
     // example usage: createCannon(side, position, delay, width, height)
 
     createCannon("top", 650, 1050,80,80);
-    createCannon("top", 1050, 4000,100,500);
-    createCannon("top", 355, 1500,55,55);
+    createCannon("top", 1050, 8000,250,500);
+    createCannon("top", 355, 2000,55,55);
     createCannon("right",800, 0,45,25);
 
 
