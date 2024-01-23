@@ -43,6 +43,7 @@
 			var box = jQuery('.box');	// reference to the HTML .box element
 			var board = jQuery('.board');	// reference to the HTML .board element
 			var boardWidth = board.width();	// the maximum X-Coordinate of the screen
+			var boardHeight = jQuery(window).height(); 
 
 			// Every 50 milliseconds, call the update Function (see below)
 			setInterval(update, 50);
@@ -51,8 +52,9 @@
 			box.on('click', handleBoxClick);
 
 			// moves the Box to a new position on the screen along the X-Axis
-			function moveBoxTo(newPositionX) {
+			function moveBoxTo(newPositionX, newPositionY) {
 				box.css("left", newPositionX);
+				box.css("top", newPositionY);
 			}
 
 			// changes the text displayed on the Box
@@ -69,6 +71,7 @@
 			var positionY = 0;
 			var points = 0;
 			var speed = 10;
+			var speedY = 10;
 
 			
 			/* 
@@ -77,14 +80,22 @@
 			turn it around! 
 			*/ 
 			function update() {
-				/* we want to increase the value of positionX by 10 */
-				positionX = positionX + speed
-				moveBoxTo(positionX)
-				if (positionX > boardWidth) {
-				speed = -speed
-			} else if (positionX < 0) {
-				speed = -speed
-			}
+                moveBoxTo(positionX, positionY);
+                positionX = positionX + speed;
+                positionY = positionY + speedY;
+                if (positionX > boardWidth - 85){
+                    speed = -speed;
+                }
+                if (positionX < 0){
+                    speed = -speed;
+                }
+                if (positionY > boardHeight - 85){
+                    speedY = -speedY;
+                }
+                if (positionY < 0){
+                    speedY = -speedY;
+                }
+
 			};
 
 			/* 
@@ -93,7 +104,10 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-				positionX = 0;
+				var randomNumberX = Math.random() * boardWidth
+				var randomNumberY = Math.random() * boardWidth
+				positionX = randomNumberX;
+				positionY = randomNumberY;
 				points = points + 1;
 			changeBoxText(points);
 			speed = speed + 3;
