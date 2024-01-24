@@ -1,8 +1,8 @@
 body {
-    background: rgb(90, 90, 90);
-    color: rgb(80, 80, 80);
+    background: rgb(59, 17, 70);
+    color: rgb(242, 217, 255);
     padding: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Mullish', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #all-contents {
   max-width: 800px;
@@ -11,7 +11,7 @@ body {
 
 /* navigation menu */
 nav {
-    background: rgb(255, 74, 89);
+	background-image: url("../../images/a.png");
    margin: 0 auto;
     display: flex;
     padding: 10px;
@@ -38,7 +38,7 @@ a {
 
 /* main container area beneath menu */
 main {
-    background: rgb(255, 255, 255);
+    background: rgb(34, 20, 37);
     display: flex;
 }
 .sidebar {
