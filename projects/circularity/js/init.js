@@ -25,17 +25,17 @@ var init = function (window) {
 
         // TODO 2 : Create a function that draws a circle 
         // Code to draw a circle
-circle = draw.randomCircleInArea(canvas, true, true, "#999", 2);
-physikz.addRandomVelocity(circle, canvas, 10, 10);
-view.addChild(circle);
-circles.push(circle);
+        function drawCircle() {
+            circle = draw.randomCircleInArea(canvas, true, true, "#999", 2);
+            physikz.addRandomVelocity(circle, canvas, 10, 10);
+        view.addChild(circle);
+        circles.push(circle);
+        }
 
         // TODO 3 / 7 : Call the drawCircle() function 
-        drawCircle();
-        drawCircle();
-        drawCircle();
-        drawCircle();
-        drawCircle();
+        for (var loopsCompleted = 0; loopsCompleted < 100; loopsCompleted++) {
+            drawCircle();
+          }
 
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
@@ -48,19 +48,16 @@ circles.push(circle);
         */
         function update() {
             // TODO 4 : Update the circle's position //
-            physikz.updatePosition(drawCircle);
-            physikz.updatePosition(drawCircle);
-            physikz.updatePosition(drawCircle);
-            physikz.updatePosition(drawCircle);
-            physikz.updatePosition(drawCircle);
-            
-            // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
-            game.checkCirclePosition(drawCircle)
-            game.checkCirclePosition(drawCircle)
-            game.checkCirclePosition(drawCircle)
-            game.checkCirclePosition(drawCircle)
-            game.checkCirclePosition(drawCircle)
+  for (var i = 0; i < circles.length; i++) {
+    physikz.updatePosition(circles[i]);
+  }
 
+            // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
+            game.checkCirclePosition(circles[0]);
+            game.checkCirclePosition(circles[1]);
+            game.checkCirclePosition(circles[2]);
+            game.checkCirclePosition(circles[3]);
+            game.checkCirclePosition(circles[4]);
             // TODO 8 / 9 : Iterate over the array
            
             
@@ -72,6 +69,10 @@ circles.push(circle);
         it to the opposite side of the screen.
         */
         game.checkCirclePosition = function(circle) {
+              // if the circle has gone past the RIGHT side of the screen then place it on the LEFT
+  if (circle.x > canvas.width) {
+    circle.x = 0;
+  }
 
             // if the circle has gone past the RIGHT side of the screen then place it on the LEFT
             if ( circle.x > canvas.width ) {
