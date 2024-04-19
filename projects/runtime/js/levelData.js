@@ -15,16 +15,16 @@ var makeLevelData = function (window) {
         number: 1,
         speed: -3,
         gameItems: [
-          { type: "sawblade", x: 400, y: groundY-580 }, //draws sawblade
-          { type: "superspike", x: 450, y: groundY-580 },//draws superspike
-          { type: "superspike", x: 800, y: groundY-700 },//draws superspike
-          { type: "superspike", x: 1200, y: groundY-700 },//draws superspike
-          { type: "sawblade", x: 1300, y: groundY-700 }, //draws sawblade
-          { type: "sawblade", x: 1500, y: groundY-700 }, //draws sawblade
-          { type: "sawblade", x: 2700, y: groundY-700 }, //draws sawblade
-          { type: "sawblade", x: 3000, y: groundY-700 }, //draws sawblade
-          { type: "sawblade", x: 3200, y: groundY-600 }, //draws sawblade
-          { type: "sawblade", x: 3500, y: groundY-600 }, //draws sawblade
+          { type: "sawblade", x: 400, y: groundY-470 }, //draws sawblade
+          { type: "superspike", x: 4900, y: groundY-470 },//draws superspike
+          { type: "superspike", x: 800, y: groundY-470 },//draws superspike
+          { type: "superspike", x: 1200, y: groundY-470 },//draws superspike
+          { type: "sawblade", x: 1300, y: groundY-470 }, //draws sawblade
+          { type: "sawblade", x: 1500, y: groundY-470 }, //draws sawblade
+          { type: "sawblade", x: 2700, y: groundY-470 }, //draws sawblade
+          { type: "sawblade", x: 3000, y: groundY-470 }, //draws sawblade
+          { type: "sawblade", x: 3200, y: groundY-370 }, //draws sawblade
+          { type: "sawblade", x: 3500, y: groundY-370 }, //draws sawblade
           { type: "enemy", x: 2500, y: groundY-50 },//draws enemy
           { type: "enemy", x: 2800, y: groundY-50 },//draws enemy
           { type: "enemy", x: 2000, y: groundY-50 },//draws enemy
@@ -34,14 +34,14 @@ var makeLevelData = function (window) {
           { type: "enemy", x: 700, y: groundY-50 }, //draws enemy
           { type: "reward", x: 3000, y: groundY-50 }, //draws reward
           { type: "marker", x: 3500, y: groundY-50 }, //draws marker
-          { type: "sawblade", x: 4000, y: groundY-600 }, //draws sawblade
-          { type: "sawblade", x: 4100, y: groundY-600 }, //draws sawblade
-          { type: "sawblade", x: 4500, y: groundY-600 }, //draws sawblade
-          { type: "sawblade", x: 5000, y: groundY-600 },//draws sawblade
-          { type: "sawblade", x: 5100, y: groundY-700 },//draws sawblade
-          { type: "sawblade", x: 5200, y: groundY-700 },//draws sawblade
-          { type: "sawblade", x: 5300, y: groundY-700 },//draws sawblade
-          { type: "sawblade", x: 5400, y: groundY-700 },//draws sawblade
+          { type: "sawblade", x: 4000, y: groundY-370 }, //draws sawblade
+          { type: "sawblade", x: 4100, y: groundY-370 }, //draws sawblade
+          { type: "sawblade", x: 4500, y: groundY-370 }, //draws sawblade
+          { type: "sawblade", x: 5000, y: groundY-370 },//draws sawblade
+          { type: "sawblade", x: 5100, y: groundY-470 },//draws sawblade
+          { type: "sawblade", x: 5200, y: groundY-470 },//draws sawblade
+          { type: "sawblade", x: 5300, y: groundY-470 },//draws sawblade
+          { type: "sawblade", x: 5400, y: groundY-470 },//draws sawblade
 
         ],
       },
